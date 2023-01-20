@@ -9,8 +9,10 @@ public class Main {
         Company geekBrains = new Company(jobAgency, "GeekBrains", 100);
         Student petrov = new Student("Petrov");
         Master ivanov = new Master("Ivanov");
+        PnD professor = new PnD("Вася");
         jobAgency.registerObserver(petrov);
         jobAgency.registerObserver(ivanov);
+        jobAgency.registerObserver(professor);
 
         for(int i = 0; i< 10; i++){
             google.needEmpoyee();
